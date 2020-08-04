@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome'); // resources/view/welcome.blade.php
+    return 'Hello World com Laravel';
 });
