@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    //return view('welcome'); // resources/view/welcome.blade.php
-    return 'Hello World com Laravel';
-});
+Route::get('/', 'CombustivelController@index');
+
+Route::get('/gasto', 'CombustivelController@gasto');

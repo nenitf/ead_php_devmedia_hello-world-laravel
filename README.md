@@ -1,6 +1,6 @@
 # ead_php_devmedia_hello-world-laravel
 
-> Projeto referente a [este artigo](https://www.devmedia.com.br/laravel-criando-um-hello-world/40676) [desse guia](https://www.devmedia.com.br/laravel/)
+> Projeto referente a [este](https://www.devmedia.com.br/laravel-criando-um-hello-world/40676) e [este](https://www.devmedia.com.br/primeiros-passos-com-laravel/40687) [desse guia](https://www.devmedia.com.br/laravel/)
 
 ## Setup
 
@@ -48,3 +48,10 @@ composer create-project --prefer-dist laravel/laravel hello-world
 - **Storage** - modelos Blade compilados, sessões baseadas em arquivo, caches de arquivos e outros arquivos gerados pela estrutura.
 - **Tests** - testes automatizados.
 - **Vendor** - dependências do Composer.
+
+### Componentes
+
+- **Rotas** - Endereços para recursos.
+- **Views** - Respostas devolvidas para o cliente.
+- **Controllers** - Classes que contém a lógica para o tratamento das requisições. Podem ser criadas via cli com ``php artisan make:controller PrimeiroController``
+- **Models** - Classes que contém regras de negócio. Podem ser criadas via cli com ``php artisan make:model PrimeiroModel``

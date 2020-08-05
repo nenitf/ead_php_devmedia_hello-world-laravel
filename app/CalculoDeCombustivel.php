@@ -1,0 +1,19 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class CalculoDeCombustivel extends Model
+{
+    public function calcular(){
+        $distancia = $_GET['distancia'];
+        $autonomia = $_GET['autonomia'];
+
+        $valorGasolina = 4.80;
+
+        $consumoGasolina = ($distancia / $autonomia ) * $valorGasolina;
+
+        return $consumoGasolina;
+    }
+}
